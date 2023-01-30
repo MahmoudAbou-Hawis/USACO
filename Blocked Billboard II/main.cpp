@@ -49,7 +49,7 @@ int main() {
         if((Second.y2 >= first.y2 && Second.y1 < first.y2 ) || 
            (Second.y2 > first.y1 && Second.y1 <= first.y1))
            {
-                result = first.area() - intersection_area(first,Second);
+                result -= intersection_area(first,Second);
            }
     }
     else if(Second.y2 >= first.y2 && Second.y1 <= first.y1)
@@ -57,7 +57,7 @@ int main() {
         if((Second.x2 > first.x1 && Second.x1 <= first.x1)||
            (Second.x2 >= first.x2 && Second.x1 < first.x2))
            {
-              result = first.area() - intersection_area(first,Second);
+              result -=  intersection_area(first,Second);
            }
     }
     cout<<result;
