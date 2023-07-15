@@ -64,6 +64,6 @@ int main()
             }
         }
     }
-    cout << max_area  ;
+    cout << max_area;
     return 0;   
 }
